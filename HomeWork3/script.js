@@ -59,8 +59,12 @@ function multiply(number1, number2) {
 console.log(multiply(4, 4));
 
 function division(number1, number2) {
-    return number1 / number2;
+    if (number2 !== 0) {
+        return number1 / number2;
+    } else {
+        return 'На 0 делить нельзя!'
+    }
 }
 
 console.log(division(6, 2));
-
+console.log(division(6, 0));
