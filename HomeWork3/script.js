@@ -9,11 +9,9 @@ toCube(3);
 // Задание 2
 let numberUser = prompt('Введите число');
 function amountWages(number) {
-    if (isNaN(number)) {
-        alert('Значение задано неверно');
-    } else {
-        alert(`Размер заработной платы за вычетом налогов равен ${number - number * 0.13}`);
-    }
+    alert((isNaN(number)) ? 'Значение задано неверно'
+        : `Размер заработной платы за вычетом налогов равен ${number - number * 0.13}`);
+
 }
 
 amountWages(numberUser);
