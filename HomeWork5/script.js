@@ -95,7 +95,8 @@ const products4 = [
     },
 ];
 
-// нет решения 
+// console.log(products4.sort(function (a, b) { return a.price - b.price }));
+console.log(products4.sort((a, b) => a.price - b.price));
 
 
 // задание 5
