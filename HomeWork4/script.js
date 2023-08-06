@@ -14,15 +14,11 @@ arr.splice(3, 2);
 console.log(arr);
 
 // Задание 3
-
 const array = Array.from({ length: 5 }, () => Math.floor(Math.random() * 10));
 console.log(array);
 
-let sum = 0;
-for (let i = 0; i < array.length; i++) {
-    sum = sum + array[i];
-}
-console.log(`сумма элементов = ${sum}`);
+console.log('сумма элементов = '
+    + array.reduce((accumulator, currentValue) => accumulator + currentValue));
 
 let min = array[0];
 for (let i = 1; i < array.length; i++) {
