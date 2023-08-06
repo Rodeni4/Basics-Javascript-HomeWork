@@ -98,6 +98,7 @@ const products4 = [
 // console.log(products4.sort(function (a, b) { return a.price - b.price }));
 console.log(products4.sort((a, b) => a.price - b.price));
 
+console.log(products4.filter(product => product.photos && product.photos.length !== 0));
 
 // задание 5
 const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
