@@ -7,3 +7,5 @@
 ### [Циклы и массивы в JavaScript](HomeWork4/script.js)
 
 ### [Объекты в JavaScript](HomeWork5/script.js)
+
+### [Введение в DOM](HomeWork6/script.js)
