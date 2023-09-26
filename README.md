@@ -9,3 +9,5 @@
 ### [Объекты в JavaScript](HomeWork5/script.js)
 
 ### [Введение в DOM](HomeWork6/script.js)
+
+### [Работа в DOM](HomeWork7/script.js)
