@@ -13,3 +13,5 @@
 ### [Работа в DOM](HomeWork7/script.js)
 
 ### [Основы событий в JavaScript](HomeWork8/script.js)
+
+### [Работа с событиями](HomeWork9/script.js)
