@@ -15,3 +15,5 @@
 ### [Основы событий в JavaScript](HomeWork8/script.js)
 
 ### [Работа с событиями](HomeWork9/script.js)
+
+### [ECMAScript Функциональный Javascript](HomeWork10/script.js)
