@@ -15,24 +15,28 @@ console.log(Math.min(...arr));
 // Задание 2
 const createCounter = () => {
     let count = 0;
-    function increment() {
-        return ++count;
-    };
-    function decrement() {
-        return --count;
-    };
-    return {
-        increment, decrement
-    };
-};
-const Counter1 = createCounter();
-Counter1.increment();
-Counter1.increment();
-console.log(Counter1.increment()); // 3
 
-const Counter2 = createCounter();
-Counter2.decrement();
-console.log(Counter2.decrement()); // -2
+    return {
+        increment() {
+            ++count;
+        },
+        decrement() {
+            --count;
+        },
+        counter() {
+            return count;
+        }
+    }
+};
+
+const counter1 = createCounter();
+counter1.increment();
+counter1.increment();
+counter1.increment();
+console.log(counter1.counter()); // 3
+
+counter1.decrement();
+console.log(counter1.counter()); // 2
 
 // Задание 3
 // Подготвка
@@ -58,9 +62,14 @@ divRoot.appendChild(divThree);
 
 // Решение
 const findElementByClass = (rootElement, className) => {
-    while (rootElement !== document.body) {
-        return rootElement.getElementsByClassName(className)[0];
-    };
+    if (rootElement.hasChildNodes()) { // если элемент имеет дочерние узлы
+        const arr = rootElement.childNodes;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i].className === className) return arr[i];
+            const findedElem = findElementByClass(arr[i], className);
+            if (findedElem) return findedElem;
+        }
+    }
 };
 
 // Пример
