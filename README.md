@@ -17,3 +17,5 @@
 ### [Работа с событиями](HomeWork9/script.js)
 
 ### [ECMAScript Функциональный Javascript](HomeWork10/script.js)
+
+### [Основы ООП](HomeWork11/script.js)
