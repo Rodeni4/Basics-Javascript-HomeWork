@@ -18,4 +18,6 @@
 
 ### [ECMAScript Функциональный Javascript](HomeWork10/script.js)
 
-### [Основы ООП](HomeWork11/script.js)
+### [ECMAScript Основы ООП](HomeWork11/script.js)
+
+### [ECMAScript ООП](HomeWork12/script.js)
