@@ -18,10 +18,10 @@ function getUserData(ID) {
             if (response.ok) {
                 return response.json();
             }
-            return 'ошибка';
+            return new Error('Сервер вернул неверный статус');
         })
-        .then((json) => { console.log(json); })
-        .catch((error) => { console.log(error); })
+        .then((json) => { return json; })
+        .catch((error) => { return error.message; })
 }
 
 getUserData(10);
@@ -46,11 +46,17 @@ function saveUserData(user) {
         header: { 'Content-Type': 'application/json;charset=utf-8' },
         body: JSON.stringify(user)
     })
+        .then((response) => {
+            if (response.ok) {
+                return response.json();
+            }
+            return new Error('Сервер вернул неверный статус');
+        })
         .then(() => {
-            console.log('User data saved successfully');
+            return 'User data saved successfully';
         })
         .catch((error) => {
-            console.log(error.message);
+            return error.message;
         });
 }
 
@@ -71,7 +77,7 @@ saveUserData(user);
 
 function changeStyleDelayed(ID, time) {
     setTimeout(() => {
-        var element = document.getElementById(ID);
+        const element = document.getElementById(ID);
         element.style.color = "red";
     }, time);
 }
