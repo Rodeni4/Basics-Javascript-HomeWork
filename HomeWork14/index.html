@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание занятий</title>
+    <style>
+        /* Стили для улучшения визуального восприятия */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        #schedule {
+            margin-top: 20px;
+        }
+
+        .class {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:disabled {
+            background-color: #aaa;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Расписание занятий</h1>
+
+    <!-- Контейнер для отображения расписания -->
+    <div id="schedule"></div>
+
+    <!-- Скрипт с данными и логикой -->
+    <script src="script.js"> </script>
+
+</body>
+
+</html>
