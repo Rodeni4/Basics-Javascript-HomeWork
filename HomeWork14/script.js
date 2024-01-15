@@ -33,7 +33,8 @@ function displaySchedule() {
         buttonElement.className = 'button';
         buttonElement.innerText = 'Записаться';
         buttonElement.disabled = classInfo.currentParticipants >= classInfo.maxParticipants;
-        buttonElement.onclick = () => enroll(classInfo);
+        // Используем addEventListener для добавления обработчика события
+        buttonElement.addEventListener('click', () => enroll(classInfo));
 
         // Добавляем элементы в контейнер
         classElement.appendChild(nameElement);
