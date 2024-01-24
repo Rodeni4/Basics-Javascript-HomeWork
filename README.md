@@ -27,3 +27,5 @@
 ### [JavaScript про API. DOM-дерево](HomeWork14/script.js)
 
 ### [JavaScript про API. События, формы](HomeWork15/scripts.js)
+
+### [JavaScript про API. Сетевые запросы](HomeWork16/scripts.js) 
